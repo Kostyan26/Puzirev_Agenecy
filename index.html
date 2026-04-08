@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzirev Agency — Новостройки в СПБ и ЛО</title>
+  <meta name="description" content="Не подбираем квартиры — проектируем идеальный образ жизни. Puzirev Agency, Санкт-Петербург.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Puzirev Agency — Новостройки в СПБ и ЛО">
+  <meta property="og:description" content="продаём мечты, а не квартиры">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-main">PUZIREV</span>
+        <span class="nav__logo-sub">AGENCY</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#why">Почему мы</a></li>
+        <li><a href="#process">Работа с нами</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <a href="tel:+79956060160" class="nav__phone">+7 (995) 606-01-60</a>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== MOBILE MENU ======================== -->
+  <div class="mmenu" id="mmenu">
+    <ul class="mmenu__list">
+      <li><a href="#about"   class="mmenu__link">О нас</a></li>
+      <li><a href="#why"     class="mmenu__link">Почему мы</a></li>
+      <li><a href="#process" class="mmenu__link">Работа с нами</a></li>
+      <li><a href="#portfolio" class="mmenu__link">Портфолио</a></li>
+      <li><a href="#faq"     class="mmenu__link">FAQ</a></li>
+      <li><a href="#contacts" class="mmenu__link">Контакты</a></li>
+    </ul>
+    <a href="tel:+79956060160" class="mmenu__phone">+7 (995) 606-01-60</a>
+  </div>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="reference/Новостройки в СПБ и ЛО_files/photo-1560185009-5bf.jpg"
+           alt="" class="hero__bg-img" fetchpriority="high">
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__main">
+      <div class="hero__grid">
+        <!-- Left: content -->
+        <div class="hero__content">
+          <div class="hero__eyebrow anim-up" data-d="0">
+            <span>Санкт-Петербург и ЛО</span>
+          </div>
+          <h1 class="hero__title anim-up" data-d="1">
+            приблизиться<br>к <em>мечте</em>
+          </h1>
+          <p class="hero__tagline anim-up" data-d="2">
+            не подбираем квартиры, а проектируем<br>идеальный образ жизни
+          </p>
+          <p class="hero__sub anim-up" data-d="3">мы видим больше, чем просто стены</p>
+        </div>
+        <!-- Right: form -->
+        <div class="hero__form-wrap anim-right" data-d="2">
+          <div class="glass-card">
+            <p class="glass-card__title">Подберём квартиру бесплатно</p>
+            <p class="glass-card__sub">Брокер свяжется с вами в течение 15 минут</p>
+            <form class="form" id="heroForm" novalidate>
+              <div class="form__group">
+                <input type="text" name="name" placeholder="Ваше имя" class="form__input" autocomplete="name">
+              </div>
+              <div class="form__group">
+                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input" autocomplete="tel">
+              </div>
+              <button type="submit" class="btn btn--gold btn--full">Отправить заявку</button>
+            </form>
+            <p class="form__agree">
+              Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="hero__stats">
+        <div class="hero__stat anim-up" data-d="4">
+          <div class="hero__stat-val">
+            <span class="hero__stat-num" data-count="5">0</span><span class="hero__stat-plus">+</span>
+          </div>
+          <span class="hero__stat-label">лет на рынке</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat anim-up" data-d="5">
+          <div class="hero__stat-val">
+            <span class="hero__stat-num" data-count="70000">0</span><span class="hero__stat-plus">+</span>
+          </div>
+          <span class="hero__stat-label">объектов в базе</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat anim-up" data-d="6">
+          <div class="hero__stat-val">
+            <span class="hero__stat-num" data-count="0">0</span><span class="hero__stat-plus">%</span>
+          </div>
+          <span class="hero__stat-label">комиссии для покупателя</span>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll-btn" aria-label="Вниз">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================== MARQUEE ======================== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <div class="ticker__row">
+        <span>семейная ипотека под 4,5%</span>
+        <span class="ticker__sep">✦</span>
+        <span>рассрочка с первым взносом 15%</span>
+        <span class="ticker__sep">✦</span>
+        <span>квартира за 400 тысяч рублей</span>
+        <span class="ticker__sep">✦</span>
+        <span>более 70 000 объектов в СПБ и ЛО</span>
+        <span class="ticker__sep">✦</span>
+        <span>бесплатная консультация</span>
+        <span class="ticker__sep">✦</span>
+        <span>без комиссии для покупателя</span>
+        <span class="ticker__sep">✦</span>
+        <span>прямые партнёры застройщиков</span>
+        <span class="ticker__sep">✦</span>
+      </div>
+      <div class="ticker__row" aria-hidden="true">
+        <span>семейная ипотека под 4,5%</span>
+        <span class="ticker__sep">✦</span>
+        <span>рассрочка с первым взносом 15%</span>
+        <span class="ticker__sep">✦</span>
+        <span>квартира за 400 тысяч рублей</span>
+        <span class="ticker__sep">✦</span>
+        <span>более 70 000 объектов в СПБ и ЛО</span>
+        <span class="ticker__sep">✦</span>
+        <span>бесплатная консультация</span>
+        <span class="ticker__sep">✦</span>
+        <span>без комиссии для покупателя</span>
+        <span class="ticker__sep">✦</span>
+        <span>прямые партнёры застройщиков</span>
+        <span class="ticker__sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal-left">
+          <div class="about__img-wrap">
+            <img src="alexander.jpg" alt="Александр Пузырев"
+                 onerror="this.src='reference/Новостройки в СПБ и ЛО_files/photo-1502672260266-.jpg'">
+            <div class="about__frame"></div>
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-num">5</span>
+            <span class="about__badge-text">лет в<br>недвижимости</span>
+          </div>
+        </div>
+        <div class="about__content reveal-right">
+          <div class="label">О нас</div>
+          <h2 class="h2">Александр<br><em>Пузырев</em></h2>
+          <div class="gold-line"></div>
+          <p class="about__text">
+            Всех приветствую! Меня зовут Пузырев Александр. Прежде чем мы с вами подберём ту самую квартиру, я решил представиться, чтобы вы понимали, кто мы такие.
+          </p>
+          <p class="about__text">
+            Мой путь в недвижимости длится уже более пяти лет. За это время мне удалось помочь многим людям с подбором квартиры, и в какой-то момент я решил собрать вокруг себя комьюнити, которое будет исповедовать такую же философию — помогать людям по вопросам недвижимости, а не просто продавать то, что выгоднее для нас.
+          </p>
+          <p class="about__text">
+            Меня окружают надёжные и проверенные люди, которые под моим руководством ежедневно качественно выполняют свою работу и находят решения даже в самых сложных ситуациях.
+          </p>
+          <a href="tel:+79956060160" class="btn btn--outline">Связаться с Александром</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== WHY ======================== -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="label">Работа с нами</div>
+        <h2 class="h2">Почему <em>выбирают нас</em></h2>
+        <p class="section-desc">10 причин доверить нам покупку вашей квартиры</p>
+      </div>
+      <div class="why__grid">
+
+        <div class="why-card reveal-up" data-d="0">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector.svg" alt="">
+          </div>
+          <h3 class="why-card__title">Постпродажное обслуживание</h3>
+          <p class="why-card__text">После сделки мы остаёмся точкой контакта: помогаем сдать квартиру в аренду или даём совет при будущей продаже. Становимся вашими персональными консультантами по недвижимости.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="1">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(1).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Более 70 000 квартир</h3>
+          <p class="why-card__text">Прямые партнёры большинства застройщиков СПБ и ЛО. Имеем доступ к эксклюзивным объектам, не представленным ни на одной общедоступной платформе.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="2">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(2).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Эксклюзивные сделки</h3>
+          <p class="why-card__text">Прямые договоры с застройщиками на реализацию закрытых лотов. Квартиры по специальной цене, доступной только партнёрам — без публикации на общих ресурсах.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="3">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(3).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Ипотечные специалисты</h3>
+          <p class="why-card__text">Знаем, с какими банками у застройщика самые выгодные партнёрские программы: низкая ставка, отсрочка платежа. Сделаем всё, чтобы вы получили лучшие условия.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="4">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(4).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Реальная репутация застройщика</h3>
+          <p class="why-card__text">Знаем, как застройщик ведёт себя при сдаче объектов, решает ли спорные вопросы. Это непубличная, но критически важная информация для правильного выбора.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="5">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(5).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Цена ниже официальной</h3>
+          <p class="why-card__text">Зная реальную маржинальность проекта, ведём переговоры о скидке. Наши договорённости о бонусах часто превосходят то, что вам предложат в офисе продаж.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="6">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(6).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Выбор лучшего лота</h3>
+          <p class="why-card__text">Изучим квартирографию, виды из окон, расположение лифтов — и подскажем, какая квартира будет тише, светлее и ликвиднее, даже если их цена одинаковая.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="7">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(7).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Сопровождение до ключей</h3>
+          <p class="why-card__text">Остаёмся с вами до победного конца: поддерживаем коммуникацию на всех этапах после подписания сделки и совместно ожидаем получения ключей.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="8">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(8).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Нейтрализация давления</h3>
+          <p class="why-card__text">В офисе застройщика на вас влияют уловками («последняя квартира по этой цене»). Мы знаем реальную ситуацию — это даёт вам время обдумать и избежать импульсивных решений.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-d="9">
+          <div class="why-card__icon">
+            <img src="reference/Новостройки в СПБ и ЛО_files/vector(9).svg" alt="">
+          </div>
+          <h3 class="why-card__title">Прогноз ликвидности</h3>
+          <p class="why-card__text">Оценим, как будет развиваться район и насколько легко продать квартиру через 5–7 лет. Помогаем выбрать не только сегодняшний дом, но и будущий актив.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROCESS ======================== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="label label--light">Процесс</div>
+        <h2 class="h2 h2--light">Как проходит <em>работа с нами</em></h2>
+        <p class="section-desc section-desc--light">10 шагов от заявки до получения ключей</p>
+      </div>
+
+      <div class="process__timeline">
+
+        <div class="process-item reveal-up" data-d="0">
+          <div class="process-item__dot">
+            <span>01</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Заявка</h3>
+            <p class="process-item__text">Вы оставляете заявку — и мы берём процесс в свои руки.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="1">
+          <div class="process-item__dot">
+            <span>02</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Первый звонок</h3>
+            <p class="process-item__text">Мы звоним вам, уточняем бюджет, сроки, способы оплаты, пожелания по квартире и рассказываем о подходящих проектах.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="2">
+          <div class="process-item__dot">
+            <span>03</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Встреча</h3>
+            <p class="process-item__text">Проводим онлайн или офлайн встречу, чтобы детально обсудить варианты, посмотреть планировки, цены и выбрать 1–3 приоритетных ЖК.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="3">
+          <div class="process-item__dot">
+            <span>04</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Одобрение банка</h3>
+            <p class="process-item__text">Если вы планируете покупку через ипотеку, наш ипотечный специалист подаёт заявки в нужные банки, чтобы получить предварительное одобрение на конкретную сумму.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="4">
+          <div class="process-item__dot">
+            <span>05</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Показ</h3>
+            <p class="process-item__text">Выезжаем с вами на показ: смотрим локацию, инфраструктуру, ход работ, посещаем шоу-румы или готовые корпуса. Если вы в другом городе — съездим и всё снимем для вас.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="5">
+          <div class="process-item__dot">
+            <span>06</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Выбор</h3>
+            <p class="process-item__text">Выбираем конкретную квартиру, этаж, планировку. Ставим платную бронь — резервируем квартиру за вами.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="6">
+          <div class="process-item__dot">
+            <span>07</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Сделка</h3>
+            <p class="process-item__text">
+              <strong>За наличные:</strong> вносите средства и подписываете с застройщиком договор долевого участия.<br><br>
+              <strong>При ипотеке:</strong> подписываете договор долевого участия с застройщиком, а с банком — кредитный договор.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="7">
+          <div class="process-item__dot">
+            <span>08</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Регистрация</h3>
+            <p class="process-item__text">
+              Застройщик подаёт документы в Росреестр для регистрации вашего права собственности — вы становитесь полноправным владельцем.<br><br>
+              <strong>При ипотеке:</strong> банк подаёт документы в Росреестр для регистрации права собственности и одновременно — обременения в виде ипотеки.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="8">
+          <div class="process-item__dot">
+            <span>09</span>
+          </div>
+          <div class="process-item__card">
+            <h3 class="process-item__title">Готовность и приёмка</h3>
+            <p class="process-item__text">После получения застройщиком разрешения на ввод дома в эксплуатацию вы подписываете акт приёма-передачи квартиры.</p>
+          </div>
+        </div>
+
+        <div class="process-item reveal-up" data-d="9">
+          <div class="process-item__dot process-item__dot--last">
+            <span>10</span>
+          </div>
+          <div class="process-item__card process-item__card--final">
+            <h3 class="process-item__title">Ключи</h3>
+            <p class="process-item__text">Получаете комплект ключей — от квартиры, подъезда и почтовых ящиков. Добро пожаловать домой.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PORTFOLIO ======================== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="label label--light">Портфолио</div>
+        <h2 class="h2 h2--light">Реальные <em>кейсы</em></h2>
+        <p class="section-desc section-desc--light">Истории наших клиентов</p>
+      </div>
+      <div class="portfolio__grid">
+
+        <div class="pcard reveal-left">
+          <div class="pcard__img">
+            <img src="apartment_1.jpg" alt="Семейная ипотека"
+                 onerror="this.src='reference/Новостройки в СПБ и ЛО_files/photo-1554995207-c18.jpg'">
+            <div class="pcard__badge">Кейс #1</div>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">Семейная ипотека под 4,5%</h3>
+            <p class="pcard__desc">Покупка квартиры под ставку 4,5% на весь срок кредита с дистанционным оформлением без визита в Санкт-Петербург</p>
+            <div class="pcard__tags">
+              <span class="tag">Семейная ипотека</span>
+              <span class="tag">4,5%</span>
+              <span class="tag">Дистанционно</span>
+            </div>
+            <button class="pcard__toggle" data-card="0">
+              <span class="pcard__toggle-text">Подробнее о кейсе</span>
+              <svg class="pcard__toggle-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="pcard__details" id="card-0">
+              <div class="case-block">
+                <div class="case-label">Ситуация</div>
+                <p>Семья с двумя детьми хотела купить квартиру в Санкт-Петербурге, но не знала, как воспользоваться семейной ипотекой и правильно оформить сделку дистанционно.</p>
+              </div>
+              <div class="case-block">
+                <div class="case-label">Результат</div>
+                <ul class="case-results">
+                  <li>✔ Одобрена ипотека под 4,5% на весь срок</li>
+                  <li>✔ Объект полностью подошёл их требованиям</li>
+                  <li>✔ Сделка оформлена дистанционно — без визита в СПБ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal-right">
+          <div class="pcard__img">
+            <img src="apartment_2.jpg" alt="Ипотека 13.9%"
+                 onerror="this.src='reference/Новостройки в СПБ и ЛО_files/photo-1481253127861-.jpg'">
+            <div class="pcard__badge">Кейс #2</div>
+          </div>
+          <div class="pcard__body">
+            <h3 class="pcard__title">Ипотека 13,9% вместо рыночных 20%</h3>
+            <p class="pcard__desc">Сергей и Алёна: переезд в СПБ, первая квартира, ставка выгоднее рыночной, чистовая отделка и скорые ключи</p>
+            <div class="pcard__tags">
+              <span class="tag">Стандартная ипотека</span>
+              <span class="tag">13,9%</span>
+              <span class="tag">Первая квартира</span>
+            </div>
+            <button class="pcard__toggle" data-card="1">
+              <span class="pcard__toggle-text">Подробнее о кейсе</span>
+              <svg class="pcard__toggle-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="pcard__details" id="card-1">
+              <div class="case-block">
+                <div class="case-label">Задача клиентов</div>
+                <ul class="case-list">
+                  <li>Взять ипотеку под ставку выгоднее рыночной (19–20%)</li>
+                  <li>Найти квартиру с чистовой отделкой</li>
+                  <li>Получить ключи как можно раньше</li>
+                  <li>Рассмотреть разные районы: Кудрово, Парнас, Рыбацкое, Мурино</li>
+                </ul>
+              </div>
+              <div class="case-block">
+                <div class="case-label">Результат</div>
+                <ul class="case-results">
+                  <li>✔ Ипотека под 13,9% вместо рыночных 17–18%</li>
+                  <li>✔ Квартира с чистовой отделкой — заезжай и живи</li>
+                  <li>✔ Ключи через несколько месяцев</li>
+                  <li>✔ Комфортный платёж для семьи</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="cta">
+    <div class="cta__glow"></div>
+    <div class="container">
+      <div class="cta__inner reveal-up">
+        <div class="label label--light">Начать</div>
+        <h2 class="h2 h2--light">превратите свои желания<br><em>в адрес</em></h2>
+        <p class="section-desc section-desc--light">Заполняйте — и давайте сделаем это вместе</p>
+        <div class="cta__form-wrap">
+          <form class="form" id="ctaForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <input type="text" name="name" placeholder="Ваше имя" class="form__input" autocomplete="name">
+              </div>
+              <div class="form__group">
+                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input" autocomplete="tel">
+              </div>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Отправить заявку</button>
+            <p class="form__agree">
+              Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="label">Вопросы</div>
+        <h2 class="h2">Ответы на <em>популярные вопросы</em></h2>
+      </div>
+      <div class="faq__list">
+
+        <div class="faq-item reveal-up" data-d="0">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">01</span>
+            <span class="faq-item__q">Зачем обращаться к вам, если я могу пойти прямо в офис продаж?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>Цены одинаковые. Мы являемся официальными партнёрами застройщиков и продаём квартиры по тем же ценам — и про все скидки мы тоже знаем. Более того, у нас могут быть эксклюзивные скидки, которых нет при прямом обращении. Наша услуга для вас — безвозмездная, комиссию выплачивает застройщик. Вы получаете независимого эксперта, который поможет выбрать лучший лот, проверит документы и будет на вашей стороне на всех этапах.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="1">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">02</span>
+            <span class="faq-item__q">Не опасно ли покупать квартиру на ранней стадии строительства?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>Риск есть всегда, но мы помогаем его минимизировать. Тщательно проверяем репутацию и финансовое состояние застройщика, изучаем историю его предыдущих объектов. Работаем только с проверенными проектами, где риски сведены к минимуму, а выгода от цены «на котловане» всегда существенная.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="2">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">03</span>
+            <span class="faq-item__q">А если застройщик обанкротится? Я потеряю деньги?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>При соблюдении всех формальностей — оформление по ДДУ и регистрация в Росреестре — ваши деньги защищены. Квартира закреплена за вами. В случае банкротства другой застройщик достраивает объект или средства возвращаются через фонд защиты дольщиков. Мы заранее проверяем участие застройщика в этой системе компенсационных выплат.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="3">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">04</span>
+            <span class="faq-item__q">Вы действительно можете помочь с ипотекой на лучших условиях?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>Да. У нас свой штат ипотечных специалистов и партнёрские программы со всеми ведущими банками. Мы знаем, с какими банками у конкретного застройщика есть специальные льготные ставки — субсидированные банком или государством. Помогаем подобрать оптимальную программу, сравнить условия и правильно собрать пакет документов.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="4">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">05</span>
+            <span class="faq-item__q">Правда ли, что через вас можно купить квартиру дешевле?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>Да, такое часто случается. Как крупные партнёры, мы иногда получаем от застройщиков квоты на квартиры с особой ценой для быстрой продажи. Также ведём переговоры о скидке, основываясь на объёме наших продаж, и знаем, на каких стадиях застройщик чаще всего идёт на уступки.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="5">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">06</span>
+            <span class="faq-item__q">Что я получу в итоге? Не будет ли отличий от планировки?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>В Договоре ДДУ прилагаются планы квартиры и чертежи с точными размерами — это юридически значимый документ. Мы поможем вам «прочитать» эти планы. Застройщик обязан сдать объект, соответствующий проектной документации. При приёмке мы не только присутствуем, но и приглашаем технического специалиста, который сверит фактические параметры с планами.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="6">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">07</span>
+            <span class="faq-item__q">Что делать, если после сдачи я найду серьёзный дефект?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>У застройщика есть гарантийные обязательства: обычно 5 лет на инженерные системы и 1 год на отделку. Любой существенный дефект должен быть устранён за его счёт. Мы предоставим вам чёткий алгоритм действий: как составить претензию, куда обратиться и как добиться исполнения гарантии.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up" data-d="7">
+          <button class="faq-item__btn">
+            <span class="faq-item__num">08</span>
+            <span class="faq-item__q">В чём разница между ДДУ и договором переуступки (цессии)?</span>
+            <span class="faq-item__ico">+</span>
+          </button>
+          <div class="faq-item__body">
+            <p>ДДУ вы заключаете напрямую с застройщиком. Цессия — это покупка права требования у другого дольщика, который выходит из проекта. У второго варианта больше юридических нюансов и рисков, которые мы помогаем проверить и минимизировать.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="contacts">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div class="footer__brand reveal-up">
+          <div class="footer__logo">PUZIREV<span>AGENCY</span></div>
+          <p class="footer__slogan">продаём мечты, а не квартиры</p>
+        </div>
+        <div class="footer__contact reveal-up" data-d="1">
+          <h3 class="footer__section-title">Давайте уже знакомиться?</h3>
+          <a href="tel:+79956060160" class="footer__link">+7 (995) 606-01-60</a>
+          <a href="mailto:puzirev.sacha75@gmail.com" class="footer__link">puzirev.sacha75@gmail.com</a>
+          <span class="footer__city">Санкт-Петербург</span>
+        </div>
+        <div class="footer__nav reveal-up" data-d="2">
+          <h3 class="footer__section-title">Навигация</h3>
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#why">Почему мы</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <div class="footer__legal">
+          <p>Пузырев Александр Денисович</p>
+          <p>ОГРНИП 323784700358711 · ИНН 784001991640</p>
+          <p>Адрес регистрации: Санкт-Петербург</p>
+        </div>
+        <div class="footer__copy">
+          <p>© 2025 Puzirev Agency. Все права защищены.</p>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== TOAST ======================== -->
+  <div class="toast" id="toast" role="alert">
+    <div class="toast__icon">✓</div>
+    <div class="toast__text">
+      <strong>Спасибо!</strong>
+      <span>Брокер свяжется с вами в ближайшее время</span>
+    </div>
+  </div>
+
+  <!-- ======================== COOKIE ======================== -->
+  <div class="cookie" id="cookie">
+    <p>Мы используем файлы cookie для наилучшего взаимодействия с сайтом.</p>
+    <button class="btn btn--gold" id="cookieOk">Хорошо, спасибо!</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
